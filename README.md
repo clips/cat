@@ -6,7 +6,7 @@ In this work, we extract aspects from restaurant reviews using a new form of att
 ## Authors
 
 * Stéphan Tulkens
-* Andreas van Cranenburgh ([andreasvc](www.github.com/andreasvc))
+* Andreas van Cranenburgh ([andreasvc](https://www.github.com/andreasvc))
 
 ## Requirements
 
