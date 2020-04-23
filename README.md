@@ -3,6 +3,11 @@
 This is the repository for the ACL 2020 paper embarrassingly simple aspect extraction.
 In this work, we extract aspects from restaurant reviews using a new form of attention that uses RBF kernels.
 
+## Authors
+
+Stéphan Tulkens
+Andreas van Cranenburgh (@andreasvc)
+
 ## Usage
 
 If you want to apply cat to your data, you need a couple of things.
@@ -25,7 +30,13 @@ This will train your embeddings and extract the aspect words, which you will nee
 ## Reproducing the experiments
 
 You can reproduce the experiments by obtaining the data, putting it in the `/data` folder and running the experiments from `/experiments`.
-In the paper, we use the SemEval 2014, 2015 and citysearch dataset.
+In the paper, we use the SemEval 2014, 2015 and citysearch dataset, which you can do here:
+
+* [semeval 2014](http://alt.qcri.org/semeval2014/task4/)
+* [semeval 2015](http://alt.qcri.org/semeval2015/task12/)
+* [citysearch](https://www.cs.cmu.edu/~mehrbod/RR/) (we used the link from [this repository](https://github.com/ruidan/Unsupervised-Aspect-Extraction) because this link seems to be broken)
+
+If you tokenize this data and put them in data, the code from `cat.datasets` can simply load the instances.
 
 ## Citing
 
