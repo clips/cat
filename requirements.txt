@@ -1,0 +1,8 @@
+numpy==1.18.1
+gensim==3.8.0
+tqdm==4.42.1
+reach==3.2.1
+matplotlib==3.2.1
+pandas==1.0.3
+pyconll==2.2.1
+scikit_learn==0.22.2.post1
