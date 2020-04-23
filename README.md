@@ -37,4 +37,4 @@ ref
 
 ## License
 
-MIT
+GPL-V3
