@@ -25,7 +25,7 @@ This will train your embeddings and extract the aspect words, which you will nee
 ## Reproducing the experiments
 
 You can reproduce the experiments by obtaining the data, putting it in the `/data` folder and running the experiments from `/experiments`.
-In the paper, we use the SemEval 2015, 2016 and citysearch dataset.
+In the paper, we use the SemEval 2014, 2015 and citysearch dataset.
 
 ## Citing
 
