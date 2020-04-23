@@ -8,6 +8,19 @@ In this work, we extract aspects from restaurant reviews using a new form of att
 Stéphan Tulkens
 Andreas van Cranenburgh (@andreasvc)
 
+## Requirements
+
+* numpy
+* gensim (for training embeddings)
+* sklearn
+* reach (for reading embeddings and vectorizing sentences)
+* pyconll (for reading conll files)
+* tqdm
+* pandas
+* matplotlib
+
+For a list, see `requirements.txt`
+
 ## Usage
 
 If you want to apply cat to your data, you need a couple of things.
