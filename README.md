@@ -21,26 +21,30 @@ In this work, we extract aspects from restaurant reviews with attention that use
 
 For a list, see `requirements.txt`
 
-## Usage
+## Using
 
 If you want to apply cat to your data, you need a couple of things.
 
-1. An aspect set, i.e., the set of labels you would like to predict
+1. An aspect set, i.e., the set of labels you would like to predict.
 2. A set of _in-domain_ word embeddings. This is really important, as we show in the paper.
-3. A set of aspect terms which you think correspond to the aspects you want to extract.
+3. A set of aspect terms which you think correspond to the aspects you want to extract. These do not need to be grouped by their aspect.
 4. A set of instances for which you want to predict the labels you define in step 1. We expect these to be tokenized, one sentence per line.
 
-If you have all these things, you can simply look at `cat.py` and replace the paths in this file with the paths to the appropriate files/instances.
-cat🐈 has a single hyperparameters: the gamma of the kernel.
+If you have all these things, you can simply look at `example_pipeline/run.py` and replace the paths in this file with the paths to the appropriate files/instances.
+cat🐈 has two hyperparameters: the gamma of the kernel, and the set of aspect words on which the attention is computed.
 
-If you do not have access to pre-trained embeddings or aspect words, you will need a parser to extract either nouns or tree fragments.
+If you do not have access to pre-trained embeddings or aspect words, but you do have access to in-domain text, you will need a parser to extract either nouns or tree fragments.
 For maximum portability, we adopt the CoNLLu format, a format that many parsers output.
 If you use [spacy](https://spacy.io/), you can use the [spacyconllu](https://github.com/andreasvc/spacyconllu) script to convert text to CoNLLu format.
 
-To obtain the nouns and embeddings for a given set of text in CoNLLu format, run `train_embeddings.py`, and replace the paths with the appropriate paths to your CoNLLu parsed file.
-This will train your embeddings and extract the aspect words, which you can then use in `cat.py`.
+To obtain the nouns and embeddings for a given set of text in CoNLLu format, run `example_pipeline/preprocessing.py`, and replace the paths with the appropriate paths to your CoNLLu parsed file.
+This will train your embeddings and extract the aspect words, which you can then use in `example_pipeline/run.py`.
 
-## Reproducing the experiments
+## Adapting
+
+If you just want to use or adapt `cat🐈` in your own project, check out `cat/simple.py`. This contains all the relevant code for computing the attention distribution.
+
+## Reproducing
 
 You can reproduce the experiments by obtaining the data, putting it in the `/data` folder and running the experiments from `/experiments`.
 In the paper, we use the SemEval 2014, 2015 and citysearch dataset, which you can do here:
