@@ -5,7 +5,7 @@ In this work, we extract aspects from restaurant reviews with attention that use
 
 ## Authors
 
-* Stéphan Tulkens
+* Stéphan Tulkens ([stephantul](https://www.github.com/stephantul))
 * Andreas van Cranenburgh ([andreasvc](https://www.github.com/andreasvc))
 
 ## Requirements
