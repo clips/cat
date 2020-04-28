@@ -1,3 +1,4 @@
+"""Plotting of attention distributions."""
 from matplotlib import pyplot as plt
 
 

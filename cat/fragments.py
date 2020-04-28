@@ -1,4 +1,4 @@
-"""Get all patterns."""
+"""Get nouns from conllu files"""
 import pyconll
 import re
 import json

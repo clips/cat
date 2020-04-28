@@ -1,4 +1,4 @@
-"""Simple dataset loader."""
+"""Simple dataset loader for the 2014, 2015 semeval datasets."""
 from sklearn.preprocessing import LabelEncoder
 from functools import partial
 

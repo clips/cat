@@ -1,3 +1,4 @@
+"""Run the baseline on the test data."""
 import numpy as np
 
 from glob import glob
