@@ -1,7 +1,6 @@
 import json
 
 from cat.simple import get_scores, rbf_attention
-from cat.dataset import restaurants_train
 from reach import Reach
 from collections import defaultdict
 
@@ -15,9 +14,6 @@ if __name__ == "__main__":
     r = Reach.load("embeddings/my_word_vectors.vec",
                    unk_word="<UNK>")
 
-    att = rbf_attention
-    datums = list(restaurants_train())
-
     aspects = [[x] for x in json.load(open("data/aspect_words.json"))]
     aspects = aspects[:N_ASPECT_WORDS]
 
@@ -30,6 +26,6 @@ if __name__ == "__main__":
                    label_set,
                    gamma=GAMMA,
                    remove_oov=False,
-                   attention_func=att)
+                   attention_func=rbf_attention)
 
     pred = s.argmax(1)
