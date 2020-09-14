@@ -1,6 +1,6 @@
 # cat🐈
 
-This is the repository for the ACL 2020 paper [embarrassingly simple aspect extraction](https://www.aclweb.org/anthology/2020.acl-main.290/).
+This is the repository for the ACL 2020 paper [Embarrassingly Simple Unsupervised Aspect Extraction](https://www.aclweb.org/anthology/2020.acl-main.290/).
 In this work, we extract aspects from restaurant reviews with attention that uses RBF kernels.
 
 ## Authors
