@@ -1,6 +1,6 @@
 # cat🐈
 
-This is the repository for the ACL 2020 paper `embarrassingly simple aspect extraction`.
+This is the repository for the ACL 2020 paper [Embarrassingly Simple Unsupervised Aspect Extraction](https://www.aclweb.org/anthology/2020.acl-main.290/).
 In this work, we extract aspects from restaurant reviews with attention that uses RBF kernels.
 
 ## Authors
@@ -19,7 +19,7 @@ In this work, we extract aspects from restaurant reviews with attention that use
 * pandas
 * matplotlib
 
-For a list, see `requirements.txt`
+Install these with `pip install -r requirements.txt`
 
 ## Using
 
@@ -46,21 +46,32 @@ If you just want to use or adapt `cat🐈` in your own project, check out `cat/s
 
 ## Reproducing
 
-You can reproduce the experiments by obtaining the data, putting it in the `/data` folder and running the experiments from `/experiments`.
+You can reproduce the experiments by obtaining the data, putting it in the `data/` folder and running the experiments from `experiments/`.
 In the paper, we use the SemEval 2014, 2015 and citysearch dataset, which you can do here:
 
 * [semeval 2014](http://alt.qcri.org/semeval2014/task4/)
 * [semeval 2015](http://alt.qcri.org/semeval2015/task12/)
 * [citysearch](https://www.cs.cmu.edu/~mehrbod/RR/) (we used the link from [this repository](https://github.com/ruidan/Unsupervised-Aspect-Extraction) because this link seems to be broken)
 
-If you extract the text from these XML files and put the tokenized training data in `/data`, you can rerun our experiments.
+If you extract the text from these XML files and put the tokenized training data in `data/`, you can rerun our experiments.
 
 ## Citing
 
 If you use the code or the techniques therein, please cite the paper:
 
-```
-ref
+```bibtex
+@inproceedings{tulkens2020embarrassingly,
+    title = "Embarrassingly Simple Unsupervised Aspect Extraction",
+    author = "Tulkens, St{\'e}phan  and  van Cranenburgh, Andreas",
+    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2020.acl-main.290",
+    doi = "10.18653/v1/2020.acl-main.290",
+    pages = "3182--3187",
+}
 ```
 
 ## License
