@@ -1,3 +1,10 @@
+# WARNING: This repository is no longer maintained.
+
+This project is archived and will not receive further updates, bug fixes, or security patches. Issues and pull requests may not be reviewed.
+
+Use this software at your own risk.
+__________________________________________________
+
 # cat🐈
 
 This is the repository for the ACL 2020 paper [Embarrassingly Simple Unsupervised Aspect Extraction](https://www.aclweb.org/anthology/2020.acl-main.290/).
